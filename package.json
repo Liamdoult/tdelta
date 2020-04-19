@@ -1,0 +1,25 @@
+{
+  "name": "delta-time",
+  "version": "0.0.1",
+  "description": "Date extention libirary for time difference.",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "rm -rf build && tsc -p .",
+    "start": "node build/cli.js",
+    "fmt": "npx prettier --write '{,*/**/}*.{js,jsx,ts,json}'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Liam Doult",
+  "license": "MIT",
+  "devDependencies": {
+    "husky": "^4.2.5",
+    "prettier": "2.0.4",
+    "pretty-quick": "^2.0.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "dependencies": {}
+}
