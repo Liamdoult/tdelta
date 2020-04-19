@@ -7,7 +7,8 @@
     "doc": "typedoc --out docs --mode modules src",
     "prestart": "rm -rf build && tsc -p .",
     "start": "node build/cli.js",
-    "fmt": "npx prettier --write '{,*/**/}*.{js,jsx,ts,json}'",
+    "fmt": "prettier --write '{,*/**/}*.{js,jsx,ts,json}'",
+    "fmt-check": "prettier --check '{,*/**/}*.{js,jsx,ts,json}'",
     "test": "mocha -r ts-node/register tests/**/*.test.ts",
     "coverage": "nyc -r lcov -e .ts -x \"*.test.ts\" npm run test"
   },
