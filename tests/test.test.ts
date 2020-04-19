@@ -1,6 +1,6 @@
 import { expect } from "chai";
 
-import DeltaTime from "../src";
+import Delta from "../src";
 
 const testData = [
   {
@@ -104,10 +104,10 @@ const testData = [
   },
 ];
 
-describe("DeltaTime", function () {
+describe("Delta", function () {
   testData.forEach(function (dataset) {
     describe(`Input ${dataset.input}`, function () {
-      let dt = new DeltaTime(dataset.input);
+      let dt = new Delta(dataset.input);
 
       it(`getMilliseconds`, function () {
         expect(dt.getMilliseconds()).equal(dataset.expected.milliseconds);

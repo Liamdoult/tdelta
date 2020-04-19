@@ -1,15 +1,16 @@
 # delta-time
 
 ![Build](https://github.com/Liamdoult/delta-time/workflows/Build/badge.svg)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Time duration and difference library to extend Date functionality.
 
 ## Usage
 
 ```javascript
-import DeltaTime from "deltaTime";
+import Delta from "tdelta";
 
-const dt = DeltaTime(someDurationInMS);
+const dt = new Delta(someDurationInMS);
 
 console.log(`h: ${dt.getHours()} m: ${dt.getMinutes()} s: ${dt.getSeconds()}`);
 ```

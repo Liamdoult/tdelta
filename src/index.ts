@@ -1,4 +1,4 @@
-interface DeltaTime {
+export interface Delta {
   durationInMS: number;
   getMilliseconds(): number;
   getSeconds(): number;
@@ -12,7 +12,7 @@ interface DeltaTime {
  * Provideds functionality for duration/difference in times.
  *
  */
-class DeltaTime implements DeltaTime {
+export class Delta implements Delta {
   /**
    * @param { number } durationInMS The duration/difference in time.
    */
@@ -27,7 +27,7 @@ class DeltaTime implements DeltaTime {
    * @example
    * ``` javascript
    * const ms = 13493;
-   * let dt = DeltaTime(ms);
+   * let dt = Delta(ms);
    * dt.getMilliseconds() // equals 493 not 13493
    * ```
    *
@@ -44,7 +44,7 @@ class DeltaTime implements DeltaTime {
    * @example
    * ``` javascript
    * const ms = 152000;
-   * let dt = DeltaTime(ms);
+   * let dt = Delta(ms);
    * dt.getSeconds() // equals 32 not 152
    * ```
    *
@@ -61,7 +61,7 @@ class DeltaTime implements DeltaTime {
    * @example
    * ``` javascript
    * const ms = 9120000;
-   * let dt = DeltaTime(ms);
+   * let dt = Delta(ms);
    * dt.getMinutes() // equals 32 not 152
    * ```
    *
@@ -78,7 +78,7 @@ class DeltaTime implements DeltaTime {
    * @example
    * ``` javascript
    * const ms = 216000000;
-   * let dt = DeltaTime(ms);
+   * let dt = Delta(ms);
    * dt.getHours() // equals 12 not 60
    * ```
    *
@@ -95,7 +95,7 @@ class DeltaTime implements DeltaTime {
    * @example
    * ``` javascript
    * const ms = 1382400000;
-   * let dt = DeltaTime(ms);
+   * let dt = Delta(ms);
    * dt.getDays() // equals 2 not 16
    * ```
    *
@@ -112,7 +112,7 @@ class DeltaTime implements DeltaTime {
    * @example
    * ``` javascript
    * const ms = 33868800000;
-   * let dt = DeltaTime(ms);
+   * let dt = Delta(ms);
    * dt.getWeeks() // equals 56 not 4
    * ```
    *
@@ -123,4 +123,4 @@ class DeltaTime implements DeltaTime {
   }
 }
 
-export default DeltaTime;
+export default Delta;
