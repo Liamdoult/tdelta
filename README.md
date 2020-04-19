@@ -1,5 +1,7 @@
 # delta-time
 
+![Build](https://github.com/Liamdoult/delta-time/workflows/Build/badge.svg)
+
 Time duration and difference library to extend Date functionality.
 
 ## Usage
