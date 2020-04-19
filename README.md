@@ -7,9 +7,9 @@ Time duration and difference library to extend Date functionality.
 ## Usage
 
 ```javascript
-import DeltaTime from "deltaTime";
+import DeltaTime from "delta-time";
 
-const dt = DeltaTime(someDurationInMS);
+const dt = new DeltaTime(someDurationInMS);
 
 console.log(`h: ${dt.getHours()} m: ${dt.getMinutes()} s: ${dt.getSeconds()}`);
 ```

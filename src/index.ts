@@ -1,4 +1,4 @@
-interface DeltaTime {
+export interface DeltaTime {
   durationInMS: number;
   getMilliseconds(): number;
   getSeconds(): number;
@@ -12,7 +12,7 @@ interface DeltaTime {
  * Provideds functionality for duration/difference in times.
  *
  */
-class DeltaTime implements DeltaTime {
+export class DeltaTime implements DeltaTime {
   /**
    * @param { number } durationInMS The duration/difference in time.
    */
