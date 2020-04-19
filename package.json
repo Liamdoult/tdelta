@@ -29,7 +29,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "pretty-quick --staged && npm test"
+      "pre-commit": "pretty-quick --staged && npm test -- --reporter min"
     }
   },
   "dependencies": {}
