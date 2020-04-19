@@ -9,7 +9,7 @@ import DeltaTime from "deltaTime";
 
 const dt = DeltaTime(someDurationInMS);
 
-console.log(`h: ${dt.getHours()} m: ${dt.getMinutes} s: ${dt.getSeconds}`);
+console.log(`h: ${dt.getHours()} m: ${dt.getMinutes()} s: ${dt.getSeconds()}`);
 ```
 
 ## Contribution
