@@ -1,64 +1,19 @@
-name: Publish Package
+name: Publish
 
 on:
   release:
-    types: [created]
+    types: [published]
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [10.x, 12.x]
-
     steps:
-      - name: Build ${{ matrix.node-version }}
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v1
       - uses: actions/setup-node@v1
         with:
-          node-version: ${{ matrix.node-version }}
-      - run: npm ci
-      - run: npm run fmt-check
-      - run: npm test
-      - run: npm run build
-
-  publish-npm:
-    needs: build
-    runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [10.x, 12.x]
-
-    steps:
-      - name: Publish npm ${{ matrix.node-version }}
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-        with:
-          node-version: ${{ matrix.node-version }}
+          node-version: 12
           registry-url: https://registry.npmjs.org/
-      - run: npm ci
-      - run: npm publish
+      - run: yarn install
+      - run: npm publish --access public
         env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
-
-  publish-gpr:
-    needs: build
-    runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [10.x, 12.x]
-
-    steps:
-      - name: Publish gpr ${{ matrix.node-version }}
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-        with:
-          node-version: ${{ matrix.node-version }}
-          registry-url: https://npm.pkg.github.com/
-      - run: npm ci
-      - run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
