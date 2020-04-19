@@ -120,3 +120,6 @@ dist
 
 # TS build files
 build/
+
+# Auto Documentation Generation
+docs/
