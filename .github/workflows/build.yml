@@ -2,9 +2,9 @@ name: Build
 
 on:
   push:
-    branches: [master, github-actions-automation]
+    branches: [master]
   pull_request:
-    branches: [master, github-actions-automation]
+    branches: [master]
 
 jobs:
   build:
