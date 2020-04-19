@@ -1,6 +1,7 @@
 # delta-time
 
 ![Build](https://github.com/Liamdoult/delta-time/workflows/Build/badge.svg)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Time duration and difference library to extend Date functionality.
 
