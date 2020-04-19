@@ -1,6 +1,6 @@
 {
-  "name": "delta-time",
-  "version": "0.0.1",
+  "name": "tdelta",
+  "version": "0.2.0",
   "description": "Date extention libirary for time difference.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
