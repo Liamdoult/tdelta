@@ -20,6 +20,18 @@ export class Delta implements Delta {
     this.durationInMS = durationInMS;
   }
 
+  static diff(timeA: Date | number, timeB: Date | number): Delta {
+    if (timeA instanceof Date) {
+      timeA = timeA.getTime();
+    }
+    if (timeB instanceof Date) {
+      timeB = timeB.getTime();
+    }
+    let diff: number = timeA - timeB;
+    let milliseconds: number = Math.abs(diff);
+    return new Delta(milliseconds);
+  }
+
   /**
    * Returns the milliseconds segment of the delta.
    *
