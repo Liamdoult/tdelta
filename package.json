@@ -1,6 +1,6 @@
 {
   "name": "tdelta",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "Date extention libirary for time difference.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -35,5 +35,27 @@
       "pre-commit": "pretty-quick --staged && npm test -- --reporter min"
     }
   },
-  "dependencies": {}
+  "dependencies": {},
+  "keywords": [
+    "time",
+    "delta",
+    "interval",
+    "time delta",
+    "tdelta",
+    "deltatime",
+    "timedelta",
+    "difference",
+    "diff",
+    "Date",
+    "comparison",
+    "milliseconds",
+    "second",
+    "minute",
+    "hour",
+    "day",
+    "delta-time",
+    "week",
+    "parser",
+    "timeout"
+  ]
 }
