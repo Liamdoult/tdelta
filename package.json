@@ -1,6 +1,6 @@
 {
   "name": "tdelta",
-  "version": "0.3.5",
+  "version": "1.0.0",
   "description": "Date extention libirary for time difference.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -9,8 +9,8 @@
     "build": "rm -rf dist && tsc",
     "prestart": "rm -rf dist && tsc",
     "start": "node build/cli.js",
-    "fmt": "prettier --write '{,*/**/}*.{js,jsx,ts,json}'",
-    "fmt-check": "prettier --check '{,*/**/}*.{js,jsx,ts,json}'",
+    "fmt": "prettier --write '{,*/**/}*.{js,jsx,ts,json,md}'",
+    "fmt-check": "prettier --check '{,*/**/}*.{js,jsx,ts,json,md}'",
     "test": "mocha -r ts-node/register tests/**/*.test.ts",
     "coverage": "nyc -r lcov -e .ts -x \"*.test.ts\" npm run test"
   },

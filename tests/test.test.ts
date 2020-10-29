@@ -9,28 +9,28 @@ describe("Delta", function () {
       describe(`Input ${dataset.input}`, function () {
         let dt = new Delta(dataset.input);
 
-        it(`getMilliseconds`, function () {
-          expect(dt.getMilliseconds()).equal(dataset.expected.milliseconds);
+        it(`Milliseconds`, function () {
+          expect(dt.ms).equal(dataset.expected.milliseconds);
         });
 
-        it(`getSeconds`, function () {
-          expect(dt.getSeconds()).equal(dataset.expected.seconds);
+        it(`Seconds`, function () {
+          expect(dt.sec).equal(dataset.expected.seconds);
         });
 
-        it(`getMinutes`, function () {
-          expect(dt.getMinutes()).equal(dataset.expected.minutes);
+        it(`Minutes`, function () {
+          expect(dt.min).equal(dataset.expected.minutes);
         });
 
-        it(`getHours`, function () {
-          expect(dt.getHours()).equal(dataset.expected.hours);
+        it(`Hours`, function () {
+          expect(dt.h).equal(dataset.expected.hours);
         });
 
-        it(`getDays`, function () {
-          expect(dt.getDays()).equal(dataset.expected.days);
+        it(`Days`, function () {
+          expect(dt.d).equal(dataset.expected.days);
         });
 
-        it(`getWeeks`, function () {
-          expect(dt.getWeeks()).equal(dataset.expected.weeks);
+        it(`Weeks`, function () {
+          expect(dt.w).equal(dataset.expected.weeks);
         });
       });
     });
@@ -40,28 +40,28 @@ describe("Delta", function () {
       describe(dataset.description, function () {
         let dt = Delta.diff(dataset.input[0], dataset.input[1]);
 
-        it(`getMilliseconds`, function () {
-          expect(dt.getMilliseconds()).equal(dataset.expected.milliseconds);
+        it(`Milliseconds`, function () {
+          expect(dt.ms).equal(dataset.expected.milliseconds);
         });
 
-        it(`getSeconds`, function () {
-          expect(dt.getSeconds()).equal(dataset.expected.seconds);
+        it(`Seconds`, function () {
+          expect(dt.sec).equal(dataset.expected.seconds);
         });
 
-        it(`getMinutes`, function () {
-          expect(dt.getMinutes()).equal(dataset.expected.minutes);
+        it(`Minutes`, function () {
+          expect(dt.min).equal(dataset.expected.minutes);
         });
 
-        it(`getHours`, function () {
-          expect(dt.getHours()).equal(dataset.expected.hours);
+        it(`Hours`, function () {
+          expect(dt.h).equal(dataset.expected.hours);
         });
 
-        it(`getDays`, function () {
-          expect(dt.getDays()).equal(dataset.expected.days);
+        it(`Days`, function () {
+          expect(dt.d).equal(dataset.expected.days);
         });
 
-        it(`getWeeks`, function () {
-          expect(dt.getWeeks()).equal(dataset.expected.weeks);
+        it(`Weeks`, function () {
+          expect(dt.w).equal(dataset.expected.weeks);
         });
       });
     });
