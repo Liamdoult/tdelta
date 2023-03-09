@@ -26,7 +26,7 @@
     "prettier": "2.0.4",
     "pretty-quick": "^2.0.1",
     "ts-node": "^8.8.2",
-    "typedoc": "^0.17.4",
+    "typedoc": "^0.23.26",
     "typescript": "^3.8.3",
     "@types/node": "^13.13.0"
   },
